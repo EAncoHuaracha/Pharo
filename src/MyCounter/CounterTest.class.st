@@ -13,6 +13,11 @@ self assert: c count equals: 7
 ]
 
 { #category : #tests }
+CounterTest >> testCounterStartingAt5 [
+	self assert: (Counter startingAt:  5) count equals: 5
+]
+
+{ #category : #tests }
 CounterTest >> testIncrement [
 | c |
 c := Counter new.

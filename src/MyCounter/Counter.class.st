@@ -34,3 +34,9 @@ Counter >> decrement [
 Counter >> increment [
 	count := count + 1
 ]
+
+{ #category : #accessing }
+Counter >> startingAt: c [
+	self.count := c.
+	^ count
+]
