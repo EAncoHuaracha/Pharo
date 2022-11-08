@@ -24,3 +24,13 @@ Counter >> count [
 Counter >> count: x [
 	self.count:= x
 ]
+
+{ #category : #API }
+Counter >> decrement [
+	count := count - 1
+]
+
+{ #category : #accessing }
+Counter >> increment [
+	count := count + 1
+]
